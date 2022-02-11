@@ -1,0 +1,40 @@
+<section class="infoHero">
+    <div class="container ">
+        <div class="row align-items-center">
+        <!-- lista de herois -->
+        <div class="container">
+            <div class="row">
+                
+                     <div class="col-lg-6 col-md-5 d-flex justify-content-center flex-column ">
+                        <img ng-src="{{detail.thumbnail.path}}.{{detail.thumbnail.extension}}" alt="">
+                    </div>
+                
+                    <div class="card col-lg-6 col-md-7 d-flex justify-content-center flex-column ">
+                        <div class="card-body">
+                        <h1 class="text-gradient text-primary">{{detail.name}}</h1>
+                        
+                        <!-- <p class="lead pe-5 me-5">Description:</p> -->
+                        <p class="lead pe-5 me-5">{{detail.description}}</p>
+                        <div class="buttons">
+                            <a href="{{detail.urls[0].url}}" class="btn btn-lg bg-gradient-dark mt-4" target="_blank">Details</a>
+                            <a href="{{detail.urls[1].url}}" class="btn btn-lg text-primary shadow-none mt-4" target="_blank">Wiki</a>
+                        </div>
+                         <ul class="list-group">
+                            <li class="list-group-item active bg-gradient-dark" >
+                                Available Comics:
+                                <span class=" float-end badge bg-gradient-primary badge-pill">
+                                    {{detail.comics.available}}
+                                </span>
+                            </li>
+                            <li class="list-group-item comics" ng-repeat="comic in detail.comics.items"> - {{comic.name}}</li>
+                        </ul>
+                        </div>
+                       
+                    </div>
+                   
+            </div>
+        </div>
+        
+    
+    </div>
+</section>

@@ -1,0 +1,18 @@
+<section card-hero class="py-7">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- lista de herois -->
+      <div class="col-lg-3 ms-auto me-auto p-lg-1 mt-lg-0 mt-5 herois " ng-repeat="comic in marvel.data.results">
+        <div class="card card-background card-background-mask-primary tilt shadow-lg">
+          <div class="full-background"
+            style="background-image: url('{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}')"
+            alt="{{comic.name}}"></div>
+          <h2 class="text-white up mb-0 mt-3 name-hero">{{comic.name}}</h2>
+          <a href="#/comic/{{comic.id}}"
+            class="btn btn bg-gradient-dark w-auto me-1 mb-0 mt-5 up btn-round btn-lg more-info">
+            More
+          </a>
+        </div>
+      </div>
+    </div>
+</section>|

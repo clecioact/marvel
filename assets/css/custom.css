@@ -1,0 +1,65 @@
+.navbar-brand img {
+    width: 100px;
+}
+i.fa-github {
+    font-size: 30px;
+}
+.bg-gradient-info {
+    
+        background-image: linear-gradient(310deg, #ff21217a 0%, #0241f1ab 100%);
+        
+}
+.info-hero .bg-gradient-info {
+    
+    background-image: linear-gradient(310deg, #000000ad 0%, #3d476200 100%);
+    
+}
+.more-info {
+    bottom: 90px;
+    position: absolute;
+}
+.hearder-home {
+    background-image:url('../img/bg_marvel.jpg') ;
+    background-attachment: fixed;
+}
+.card.card-background.card-background-mask-primary:after {
+    background-image: none;
+    opacity: .85;
+}
+.herois {
+    float: left;
+    max-height: 378px;
+    margin-bottom: 4rem;
+}
+#output-list + div {
+    float: left;
+    width: auto;
+}
+.card.card-background {
+    align-items: center;
+    min-height: 435px;
+    transform: translateZ(50px) scale(.9) !important;
+}
+.card.card-background .full-background:hover {   
+    background-size: 150%!important;
+}    
+.card.card-background:hover {transform: translateZ(50px) scale(1) !important;
+    transition: all 0.5s;
+    background-size: 150%!important;
+}
+.info-hero .page-header .container .text-white {
+    text-shadow: 1px 1px 6px #00000096;
+}   
+.name-hero {
+    position: absolute;
+    bottom: 50%;
+} 
+button.more-info {
+    position: absolute;
+    bottom: 15%;
+}
+@media only screen and (max-width: 992px) {
+    .herois {
+        width: 100%;
+    }
+}
